@@ -1,0 +1,54 @@
+git --version
+git config --global user.name "nombre"
+git config --global user.mail "mail"
+
+---------------------------------------
+CREACION DE REPOSITORIO
+-Repositorio vacío
+    git init
+-Repositorio existente
+    git clone identificador pathDestino
+
+----------------------------------------
+VERSIONES EXISTENTES
+-Ver historial de commits
+    git log
+-Ver diferencias entre archivos de los commits
+    git diff commit_id commit_id
+-----------------------------------------
+AÑADIR ARCHIVOS AL AREA DE PREPARACION
+-Añadir solo un archivo
+    git add nombre_archivo
+
+-Añadir todo archivo en el directorio
+    git add .
+
+-----------------------------------------
+EJECUTAR UN COMMIT
+    git commit -m "mensaje del commit"
+
+------------------------------------------
+VOLVER A UNA VERSION INDICADA
+    git checkout commit_id
+
+    git tag -a nombreEtiqueta -m ""
+    ejm:] git checkout nombreEtiqueta
+------------------------------------------
+VERIFICAR ESTADO DEL REPOSITORIO
+    git status
+
+------------------------------------------
+RAMAS
+-Creacion de una rama
+    git branch nombreRama
+
+-Cambiar de rama
+    git checkout nombreRamaDestino
+    *Es necesario hacer commit en ramaOrigen
+
+-Unir contenido de ramas
+    git merge nombreRama_aUnir
+    * Realizar desde rama destino
+
+-Listar ramas existentes
+    git branch
